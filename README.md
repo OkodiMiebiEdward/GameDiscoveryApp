@@ -3,13 +3,21 @@ Welcome to  Game Discovery App! This project is a fun and exciting web app built
 
 Table of Contents
 1.Project Overview
+
 2.Installation
+
 3.Usage
+
 4.Technologies Used
+
 5.Features
+
 6.Code Structure
+
 7.Contributing
+
 8.Credits
+
 9.License
 
 Project Overview
@@ -20,6 +28,7 @@ To run Awesome Game App locally, follow these steps:
 
 Prerequisites:
 i.Make sure you have Node.js and npm installed on your system.
+
 ii.Clone this repository to your local machine.
 
 2.Installation
@@ -36,6 +45,7 @@ npm start
 
 Usage
 1.Explore the game world
+
 2.Invite someone
 
 Technologies Used
@@ -44,10 +54,12 @@ Technologies Used
 
 Features
 1.Character customization
+
 2.Dark and light Mode
 
 Code Structure
 src/
+
 components/: Reusable React components
 
 Contributing
@@ -55,10 +67,12 @@ We welcome contributions! If you’d like to improve Discovery Game App, follow 
 
 Fork the repository.
 Create a new branch for your feature or bug fix.
+
 Make your changes and submit a pull request.
 
 Credits
 Game icons by GameIcons.net.
+
 Background music by Kevin MacLeod.
 
 
