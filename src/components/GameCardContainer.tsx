@@ -7,7 +7,7 @@ interface IProps {
 
 const GameCardContainer = ({ children }: IProps) => {
   return (
-    <Box overflow="hidden" borderRadius={10} width="200px">
+    <Box overflow="hidden" borderRadius={10}>
       {children}
     </Box>
   );
