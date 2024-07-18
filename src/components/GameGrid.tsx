@@ -4,14 +4,18 @@ import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 import { IGenre } from "../hooks/useGenres";
+import { IGameQuery } from "../App";
 
 interface IProps {
-  selectedGenre: IGenre | null;
-  selectedPlatform: IPlatform | null;
+  gameQuery: IGameQuery;
+  // selectedGenre: IGenre | null;
+  // selectedPlatform: IPlatform | null;
 }
 
-const GameGrid = ({ selectedGenre, selectedPlatform }: IProps) => {
-  const { error, data, isLoading } = useGames(selectedGenre, selectedPlatform);
+const GameGrid = ({
+  gameQuery /*selectedGenre, selectedPlatform*/,
+}: IProps) => {
+  const { error, data, isLoading } = useGames( gameQuery/*selectedGenre, selectedPlatform*/);
   const skeletons = [1, 2, 3, 4, 5, 6];
 
   return (

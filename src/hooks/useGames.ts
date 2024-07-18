@@ -2,6 +2,7 @@
 // import apiClient from "../services/api-client";
 // import { CanceledError } from "axios";
 
+import { IGameQuery } from "../App";
 import useData from "./useData";
 import { IGenre } from "./useGenres";
 
@@ -55,12 +56,19 @@ export interface IGame {
 // export default games;
 
 const useGames = (
-  selectedGenre: IGenre | null,
-  selectedPlatform: IPlatform | null
+  // selectedGenre: IGenre | null,
+  // selectedPlatform: IPlatform | null
+  gameQuery: IGameQuery
 ) =>
   useData<IGame>(
     "/games",
-    { params: { genres: selectedGenre?.id, platforms: selectedPlatform?.id } },
-    [selectedGenre?.id, selectedPlatform?.id]
+    {
+      params: {
+        genres: gameQuery.genre,
+        platforms:
+          gameQuery.platform /*genres: selectedGenre?.id, platforms: selectedPlatform?.id */,
+      },
+    },
+    [gameQuery /*selectedGenre?.id, selectedPlatform?.id*/]
   );
 export default useGames;
