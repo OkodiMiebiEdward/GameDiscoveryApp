@@ -2,8 +2,6 @@
 // import apiClient from "../services/api-client";
 // import { CanceledError } from "axios";
 
-import useData from "./useData";
-
 // export interface IGenre {
 //   id: number;
 //   name: string;
@@ -41,7 +39,9 @@ import useData from "./useData";
 //   return { genres, error, isLoading };
 // };
 
-// export default useGenres;
+// export default useGenres;enres
+
+import genres from "../data/genres";
 
 export interface IGenre {
   id: number;
@@ -49,6 +49,11 @@ export interface IGenre {
   image_background: string;
 }
 
-const useGenres = () => useData<IGenre>("/genres");
+// const useGenres = () => useData<IGenre>("/genres");
+const useGenres = () => ({
+  data: genres,
+  isLoading: false,
+  error: null,
+});
 
 export default useGenres;
