@@ -18,6 +18,7 @@ export interface IGame {
   background_image: string;
   parent_platforms: { platform: IPlatform }[];
   metacritic: number;
+  rating_top: number;
 }
 
 // interface IFetchGamesResponse {
